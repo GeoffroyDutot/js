@@ -3,7 +3,7 @@ var gulp = require('gulp'),
   bundle = require('gulp-bundle-assets');
 var sass = require('gulp-sass');
 const babel = require('gulp-babel');
- 
+const zip = require('gulp-zip');
 
 
 // SASS, concaténation de fichiers et minification
@@ -25,3 +25,12 @@ gulp.task('bundle', function() {
       .pipe(bundle())
       .pipe(gulp.dest('./public'));
 });
+
+
+
+
+gulp.task('zip', () =>
+    gulp.src('*')
+        .pipe(zip('projet_gulp.zip'))
+        .pipe(gulp.dest('packaging'))
+);
