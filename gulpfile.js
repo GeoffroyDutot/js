@@ -26,22 +26,40 @@ gulp.task('js', () =>
 
 
 gulp.task('bundle_js', function(){
+
     return gulp.src(['./js/*.js'])
         .pipe(gp_concat('concat.js'))
         .pipe(gulp.dest('public'))
         //.pipe(gp_rename('uglify.js'))
         .pipe(gp_uglify())
         .pipe(gulp.dest('public'));
+
+  return gulp.src(['./js/*.js'])
+      .pipe(gp_concat('concat.js'))
+      .pipe(gulp.dest('public'))
+      //.pipe(gp_rename('uglify.js'))
+      .pipe(gp_uglify())
+      .pipe(gulp.dest('public'));
+
 });
 
 
 gulp.task('bundle_css', function(){
+
     return gulp.src(['./css/*.css'])
         .pipe(gp_concat('concat.css'))
         .pipe(gulp.dest('public'))
         //.pipe(gp_rename('uglify.js'))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('public'));
+
+  return gulp.src(['./css/*.css'])
+      .pipe(gp_concat('concat.css'))
+      .pipe(gulp.dest('public'))
+      //.pipe(gp_rename('uglify.js'))
+      .pipe(cleanCSS({compatibility: 'ie8'}))
+      .pipe(gulp.dest('public'));
+
 });
 
 
@@ -50,6 +68,7 @@ gulp.task('zip', () =>
         .pipe(zip('projet_gulp.zip'))
         .pipe(gulp.dest('packaging'))
 );
+
 
 const {src, task} = require('gulp');
 const eslint = require('gulp-eslint');
@@ -92,3 +111,7 @@ gulp.task('installation'), function () {
         gulp.task('zip')
 }
 */
+
+
+
+
