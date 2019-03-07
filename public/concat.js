@@ -1,0 +1,1 @@
+var div=document.getElementById("hello");div.innerText="Hello";var div=document.getElementById("world");div.innerText="world";
