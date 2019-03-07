@@ -1,1 +1,1 @@
-{"version":3,"sources":["css/css.css","css/css2.css"],"names":[],"mappings":"AAAA,IACE,cAAe;ACDjB,IACE,WAAY","file":"main-a4b11f528a.css","sourcesContent":[".h1 {\n  align-content: center; }\n",".h6 {\n  margin-top: 80%; }\n"],"sourceRoot":"/source/"}
+{"version":3,"sources":["css/css.css","css/css2.css"],"names":[],"mappings":"AAAA,IACE,cAAe;ACDjB,IACE,WAAY","file":"main-a4b11f528a.css","sourcesContent":[".h1 {\r\n  align-content: center; }\r\n",".h6 {\r\n  margin-top: 80%; }\r\n"],"sourceRoot":"/source/"}
