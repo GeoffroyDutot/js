@@ -1,0 +1,33 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.config.js",
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "gulp-babel": "^8.0.0",
+    "gulp-bundle-assets": "^2.29.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-zip": "^4.2.0",
+    "node-sass": "^4.11.0",
+    "orchestrator": "^0.3.8"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.0.0",
+    "gulp-sass-lint": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonbourrasseau/js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonbourrasseau/js/issues"
+  },
+  "homepage": "https://github.com/simonbourrasseau/js#readme"
+}
